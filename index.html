@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="whiteMode" lang="pt-br">
+<head>
+    <title>Calculadora de Consumo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+
+<body class="gradientLight">
+    <div class="container">
+        <input type="checkbox" id="db" class="darkButton buttonOn" onclick="darkMode()" title="Dark Mode ON/OFF">
+        <!--Headline-->
+        <div class="banner">
+            <div class="headline"><span class="logoName">Calculadora </span>de Consumo de Soluções em Análises HPLC</div>
+        </div>
+
+        <!--Landing-->
+
+        <div class="openMenu">
+            <h1>Sobre </h1>
+            <div class="description">
+                <p>Essa é uma Calculadora de Consumo de Soluções para análises cromatográficas.</p>
+                <p>Após inserido o Fluxo do equipamento, Tempo de Análise e Número de Injeções, a Calculadora retorna<br /> o consumo esperado de cada Solução.</p>
+            </div>
+            <div class="menuButton"><div class="startButton" onclick="calculatorMenu()">Iniciar Cálculo</div></div>
+        </div>
+
+        <!--Design CALCULADORA-->
+        <div class="calculatorMenu">
+            <!--Fluxo-->
+            <div class="fluxLine calcContent">
+                <div class="topContent">
+                    <label style="margin-right:5px" for="flux">Fluxo(mL/min):</label>
+                    <input type="number" id="flux" name="flux" value="1" max="20" min="0" maxlength="2" style="width:40px;" />
+                </div>
+
+                <div class="topContent">
+                    <label style="margin-right:5px" for="injection">Injeções:</label>
+                    <input type="number" id="injection" name="injection" value="1" max="2000" min="0" style="width:40px;" />
+                </div>
+
+                <div class="topContent">
+                    <label style="margin-right:5px" for="time">Tempo Análise(min):</label>
+                    <input type="number" id="time" value="1" name="runtime" max="2000" min="0" style="width:40px;" />
+                </div>
+            </div>
+            <!--Fase Móvel-->
+            <div class="mobilePhase calcContent">
+                <div class="mobileText">Fase Móvel</div>
+                <div class="mobileBox">
+                    <label>A<input type="number" id="mobileA" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
+                    <label>B<input type="number" id="mobileB" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
+                    <label>C<input type="number" id="mobileC" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
+                    <label>D<input type="number" id="mobileD" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
+                </div>
+            </div>
+            <!--RESULTADOS-->
+            <div class="bottomBox">
+                <div class="resultBox">
+                    <div class="result">
+                        <div class="resultName">Fase Móvel A:</div><div class="resultValue" id="valueA"></div>
+                    </div>
+                    <div class="result">
+                        <div class="resultName">Fase Móvel B:</div><div class="resultValue" id="valueB"></div>
+                    </div>
+                    <div class="result">
+                        <div class="resultName">Fase Móvel C:</div><div class="resultValue" id="valueC"></div>
+                    </div>
+                    <div class="result">
+                        <div class="resultName">Fase Móvel D:</div><div class="resultValue" id="valueD"></div>
+                    </div>
+                </div>
+                <div class="calcButton" onclick="calculate()">Calcular</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
