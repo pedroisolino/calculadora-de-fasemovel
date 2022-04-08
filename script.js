@@ -17,11 +17,12 @@ function verificarMobileKeyboardOn() {
         if (mobile.style.display = 'flex') {
             mobileBox.style.display = 'none';
         }
+
+        else {
+            mobile.style.display = 'flex';
+        }
     }
 
-    else {
-        mobile.style.display = 'flex';
-    }
 }
 
 
