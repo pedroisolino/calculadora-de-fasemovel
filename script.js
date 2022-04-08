@@ -14,12 +14,12 @@ function verificarMobileKeyboardOn() {
         || navigator.userAgent.match(/BlackBerry/i)
         || navigator.userAgent.match(/Windows Phone/i)
     ) {
-        if (mobile.style.display = 'flex') {
+        if (mobileBox.style.display = 'flex') {
             mobileBox.style.display = 'none';
         }
 
         else {
-            mobile.style.display = 'flex';
+            mobileBox.style.display = 'flex';
         }
     }
 
