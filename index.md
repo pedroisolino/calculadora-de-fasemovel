@@ -15,7 +15,7 @@
         <input type="checkbox" id="db" class="darkButton buttonOn" onclick="darkMode()" title="Dark Mode ON/OFF">
         <!--Headline-->
         <div class="banner">
-            <div class="headline"><span class="logoName">Calculadora </span>de Consumo de Soluções em Análises HPLC</div>
+            <div class="headline"><span class="logoName">Calculadora </span>de Consumo de SoluÃ§Ãµes em AnÃ¡lises HPLC</div>
         </div>
 
         <!--Landing-->
@@ -23,10 +23,10 @@
         <div class="openMenu">
             <h1>Sobre </h1>
             <div class="description">
-                <p>Essa é uma Calculadora de Consumo de Soluções para análises cromatográficas.</p>
-                <p>Após inserido o Fluxo do equipamento, Tempo de Análise e Número de Injeções, a Calculadora retorna<br /> o consumo esperado de cada Solução.</p>
+                <p>Essa Ã© uma Calculadora de Consumo de SoluÃ§Ãµes para anÃ¡lises cromatogrÃ¡ficas.</p>
+                <p>ApÃ³s inserido o Fluxo do equipamento, Tempo de AnÃ¡lise e NÃºmero de InjeÃ§Ãµes, a Calculadora retorna<br /> o consumo esperado de cada SoluÃ§Ã£o.</p>
             </div>
-            <div class="menuButton"><div class="startButton" onclick="calculatorMenu()">Iniciar Cálculo</div></div>
+            <div class="menuButton"><div class="startButton" onclick="calculatorMenu()">Iniciar CÃ¡lculo</div></div>
         </div>
 
         <!--Design CALCULADORA-->
@@ -39,18 +39,18 @@
                 </div>
 
                 <div class="topContent">
-                    <label style="margin-right:5px" for="injection">Injeções:</label>
+                    <label style="margin-right:5px" for="injection">InjeÃ§Ãµes:</label>
                     <input type="number" id="injection" name="injection" value="1" max="2000" min="0" style="width:40px;" />
                 </div>
 
                 <div class="topContent">
-                    <label style="margin-right:5px" for="time">Tempo Análise(min):</label>
+                    <label style="margin-right:5px" for="time">Tempo AnÃ¡lise(min):</label>
                     <input type="number" id="time" value="1" name="runtime" max="2000" min="0" style="width:40px;" />
                 </div>
             </div>
-            <!--Fase Móvel-->
+            <!--Fase MÃ³vel-->
             <div class="mobilePhase calcContent">
-                <div class="mobileText">Fase Móvel</div>
+                <div class="mobileText">Fase MÃ³vel</div>
                 <div class="mobileBox">
                     <label>A<input type="number" id="mobileA" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
                     <label>B<input type="number" id="mobileB" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
@@ -62,16 +62,16 @@
             <div class="bottomBox">
                 <div class="resultBox">
                     <div class="result">
-                        <div class="resultName">Fase Móvel A:</div><div class="resultValue" id="valueA"></div>
+                        <div class="resultName">Fase MÃ³vel A:</div><div class="resultValue" id="valueA"></div>
                     </div>
                     <div class="result">
-                        <div class="resultName">Fase Móvel B:</div><div class="resultValue" id="valueB"></div>
+                        <div class="resultName">Fase MÃ³vel B:</div><div class="resultValue" id="valueB"></div>
                     </div>
                     <div class="result">
-                        <div class="resultName">Fase Móvel C:</div><div class="resultValue" id="valueC"></div>
+                        <div class="resultName">Fase MÃ³vel C:</div><div class="resultValue" id="valueC"></div>
                     </div>
                     <div class="result">
-                        <div class="resultName">Fase Móvel D:</div><div class="resultValue" id="valueD"></div>
+                        <div class="resultName">Fase MÃ³vel D:</div><div class="resultValue" id="valueD"></div>
                     </div>
                 </div>
                 <div class="calcButton" onclick="calculate()">Calcular</div>
