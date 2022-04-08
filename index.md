@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="whiteMode" lang="pt-br">
 <head>
+    <meta charset="utf-8"/>
     <title>Calculadora de Consumo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
