@@ -37,17 +37,17 @@
             <div class="fluxLine calcContent">
                 <div class="topContent">
                     <label style="margin-right:5px" for="flux">Fluxo(mL/min):</label>
-                    <input onFocus="verificarMobile()" type="number" id="flux" name="flux" value="1" max="20" min="0" maxlength="2" style="width:40px;" />
+                    <input onFocus="verificarMobileKeyboardOn" onblur="verificarMobileKeyboardOn" type="number" id="flux" name="flux" value="1" max="20" min="0" maxlength="2" style="width:40px;" />
                 </div>
 
                 <div class="topContent">
                     <label style="margin-right:5px" for="injection">Injeções:</label>
-                    <input onFocus="verificarMobile()" type="number" id="injection" name="injection" value="1" max="2000" min="0" style="width:40px;" />
+                    <input onFocus="verificarMobileKeyboardOn" onblur="verificarMobileKeyboardOn" type="number" id="injection" name="injection" value="1" max="2000" min="0" style="width:40px;" />
                 </div>
 
                 <div class="topContent">
                     <label style="margin-right:5px" for="time">Tempo Análise(min):</label>
-                    <input onFocus="verificarMobile()" type="number" id="time" value="1" name="runtime" max="2000" min="0" style="width:40px;" />
+                    <input onFocus="verificarMobileKeyboardOn" onblur="verificarMobileKeyboardOn" type="number" id="time" value="1" name="runtime" max="2000" min="0" style="width:40px;" />
                 </div>
             </div>
             <!--Fase Móvel-->
