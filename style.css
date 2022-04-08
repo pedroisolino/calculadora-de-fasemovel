@@ -185,8 +185,15 @@ input, select{
     margin-right:10px;
 }
 
-.mobilePhase{
+.flexOn{
     display:flex;
+}
+
+.flexOff{
+    display:none;
+}
+
+.mobilePhase{
     flex-direction:column;
     width:80%;
     height:25vh;

@@ -1,12 +1,24 @@
 /* Variáveis corpo da página */
 let htmlList = document.querySelector('html').classList;
 let bodyList = document.querySelector('body').classList;
-let mobileBox = document.querySelector('.mobilePhase');
-let mobileBoxStyle = mobileBox.style.display;
+
+let mobileBox = document.getElementById('mobileBox').classList;
 
 let darkButton = document.getElementById('db').classList;
 
-function verificarMobileKeyboardOn() {
+function clearPhase() {
+    if (mobileBox.contains('flexOn')) {
+        mobileBox.remove('flexOn');
+        mobileBox.add('flexOff');
+    }
+
+    else {
+        mobileBox.remove('flexOff');
+        mobileBox.add('flexOn');
+    }
+}
+
+function verificarMobileKeyboard() {
     if (navigator.userAgent.match(/Android/i)
         || navigator.userAgent.match(/webOS/i)
         || navigator.userAgent.match(/iPhone/i)
@@ -15,15 +27,8 @@ function verificarMobileKeyboardOn() {
         || navigator.userAgent.match(/BlackBerry/i)
         || navigator.userAgent.match(/Windows Phone/i)
     ) {
-        if (mobileBoxStyle == 'flex') {
-            mobileBoxStyle = 'none';
-        }
-
-        else {
-            mobileBoxStyle = 'flex';
-        }
+        clearPhase();
     }
-
 }
 
 
