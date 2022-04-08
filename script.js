@@ -1,6 +1,6 @@
 let htmlList = document.querySelector('html').classList;
 let bodyList = document.querySelector('body').classList;
-let resultBox = document.getElementsByClassName('resultBox').classList;
+let resultBox = document.getElementById('resultBox').classList;
 
 let darkButton = document.getElementById('db').classList;
 
