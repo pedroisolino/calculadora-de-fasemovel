@@ -1,24 +1,10 @@
-let analise = {
-    title: '',
-    type: '',
-
-    defTitle: function defName(inputTitle) {
-        analise.title = inputTitle;
-        calculatorMenu();
-    },
-
-    defType: function defType(inputType) {
-        analise.type = inputType;
-        calculatorMenu();
-    }
-}
-/* Variáveis corpo da página */
+/* VariÃ¡veis corpo da pÃ¡gina */
 let htmlList = document.querySelector('html').classList;
 let bodyList = document.querySelector('body').classList;
 
 let darkButton = document.getElementById('db').classList;
 
-/* Variáveis para Cálculo */
+/* VariÃ¡veis para CÃ¡lculo */
 let flux = document.querySelector('#flux');
 let fluxValue = flux.value;
 
@@ -46,7 +32,7 @@ let bVolume;
 let cVolume;
 let dVolume;
 
-/* FUNÇÃO CALCULAR!!!! */
+/* FUNÃ‡ÃƒO CALCULAR!!!! */
 function calculate() {
     fluxValue = flux.value;
     injectionValue = injection.value;
@@ -92,7 +78,7 @@ function darkMode() {
 }
 
 
-//*Função NEXT*//
+//*FunÃ§Ã£o NEXT*//
 function calculatorMenu() {
     document.querySelector('.openMenu').style.display = 'none';
     document.querySelector('.calculatorMenu').style.display = 'flex';
