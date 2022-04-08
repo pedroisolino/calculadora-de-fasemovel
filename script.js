@@ -3,6 +3,7 @@ let htmlList = document.querySelector('html').classList;
 let bodyList = document.querySelector('body').classList;
 
 let mobileBox = document.getElementById('mobileBox').classList;
+let fluxBox = document.getElementById('fluxbox').classList;
 
 let darkButton = document.getElementById('db').classList;
 
@@ -18,6 +19,18 @@ function clearPhase() {
     }
 }
 
+function clearFlux() {
+    if (fluxBox.contains('flexOn')) {
+        fluxBox.remove('flexOn');
+        fluxBox.add('flexOff');
+    }
+
+    else {
+        fluxBox.remove('flexOff');
+        fluxBox.add('flexOn');
+    }
+}
+
 function verificarMobileKeyboard() {
     if (navigator.userAgent.match(/Android/i)
         || navigator.userAgent.match(/webOS/i)
@@ -28,6 +41,19 @@ function verificarMobileKeyboard() {
         || navigator.userAgent.match(/Windows Phone/i)
     ) {
         clearPhase();
+    }
+}
+
+function verificarMobKeyboard() {
+    if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+    ) {
+        clearFlux();
     }
 }
 

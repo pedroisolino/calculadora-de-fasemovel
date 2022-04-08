@@ -34,7 +34,7 @@
         <!--Design CALCULADORA-->
         <div class="calculatorMenu">
             <!--Fluxo-->
-            <div class="fluxLine calcContent">
+            <div class="fluxLine calcContent flexOn" id="fluxbox">
                 <div class="topContent">
                     <label style="margin-right:5px" for="flux">Fluxo(mL/min):</label>
                     <input onFocus="verificarMobileKeyboard()" onblur="verificarMobileKeyboard()" type="number" id="flux" name="flux" value="1" max="20" min="0" maxlength="2" style="width:40px;" />
@@ -54,10 +54,10 @@
             <div class="mobilePhase calcContent flexOn" id="mobileBox">
                 <div class="mobileText">Fase Móvel</div>
                 <div class="mobileBox">
-                    <label>A<input type="number" id="mobileA" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
-                    <label>B<input type="number" id="mobileB" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
-                    <label>C<input type="number" id="mobileC" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
-                    <label>D<input type="number" id="mobileD" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
+                    <label>A<input onFocus="verificarMobKeyboard()" onblur="verificarMobKeyboard()" type="number" id="mobileA" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
+                    <label>B<input onFocus="verificarMobKeyboard()" onblur="verificarMobKeyboard()" type="number" id="mobileB" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
+                    <label>C<input onFocus="verificarMobKeyboard()" onblur="verificarMobKeyboard()" type="number" id="mobileC" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
+                    <label>D<input onFocus="verificarMobKeyboard()" onblur="verificarMobKeyboard()" type="number" id="mobileD" class="mobile" max="100" min="0" value="00" maxlength="3" />%</label>
                 </div>
             </div>
             <!--RESULTADOS-->

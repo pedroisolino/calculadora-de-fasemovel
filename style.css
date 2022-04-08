@@ -165,7 +165,6 @@ body {
 }
 
 .fluxLine{
-    display:flex;
     flex-direction:row;
     padding:15px;
     height:20px;
