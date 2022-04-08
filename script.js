@@ -3,7 +3,7 @@ let htmlList = document.querySelector('html').classList;
 let bodyList = document.querySelector('body').classList;
 
 let mobileBox = document.getElementById('mobileBox').classList;
-let fluxBox = document.getElementById('fluxbox').classList;
+let resultBox = document.getElementById('resultBox').classList;
 
 let darkButton = document.getElementById('db').classList;
 
@@ -19,15 +19,15 @@ function clearPhase() {
     }
 }
 
-function clearFlux() {
-    if (fluxBox.contains('flexOn')) {
-        fluxBox.remove('flexOn');
-        fluxBox.add('flexOff');
+function clearResult() {
+    if (resultBox.contains('flexOn')) {
+        resultBox.remove('flexOn');
+        resultBox.add('flexOff');
     }
 
     else {
-        fluxBox.remove('flexOff');
-        fluxBox.add('flexOn');
+        resultBox.remove('flexOff');
+        resultBox.add('flexOn');
     }
 }
 
@@ -40,20 +40,7 @@ function verificarMobileKeyboard() {
         || navigator.userAgent.match(/BlackBerry/i)
         || navigator.userAgent.match(/Windows Phone/i)
     ) {
-        clearPhase();
-    }
-}
-
-function verificarMobKeyboard() {
-    if (navigator.userAgent.match(/Android/i)
-        || navigator.userAgent.match(/webOS/i)
-        || navigator.userAgent.match(/iPhone/i)
-        || navigator.userAgent.match(/iPad/i)
-        || navigator.userAgent.match(/iPod/i)
-        || navigator.userAgent.match(/BlackBerry/i)
-        || navigator.userAgent.match(/Windows Phone/i)
-    ) {
-        clearFlux();
+        clearResult();
     }
 }
 

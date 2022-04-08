@@ -249,7 +249,6 @@ input[type=number] {
 }
 
 .resultBox{
-    display:flex;
     align-items:flex-start;
     flex-grow:1;
     flex-basis:auto;
