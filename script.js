@@ -2,6 +2,7 @@
 let htmlList = document.querySelector('html').classList;
 let bodyList = document.querySelector('body').classList;
 let mobileBox = document.querySelector('.mobilePhase');
+let mobileBoxStyle = mobileBox.style.display;
 
 let darkButton = document.getElementById('db').classList;
 
@@ -14,12 +15,12 @@ function verificarMobileKeyboardOn() {
         || navigator.userAgent.match(/BlackBerry/i)
         || navigator.userAgent.match(/Windows Phone/i)
     ) {
-        if (mobileBox.style.display = 'flex') {
-            mobileBox.style.display = 'none';
+        if (mobileBoxStyle == 'flex') {
+            mobileBoxStyle = 'none';
         }
 
         else {
-            mobileBox.style.display = 'flex';
+            mobileBoxStyle = 'flex';
         }
     }
 
