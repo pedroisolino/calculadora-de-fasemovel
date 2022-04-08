@@ -7,18 +7,6 @@ let resultBox = document.getElementById('resultBox').classList;
 
 let darkButton = document.getElementById('db').classList;
 
-function clearPhase() {
-    if (mobileBox.contains('flexOn')) {
-        mobileBox.remove('flexOn');
-        mobileBox.add('flexOff');
-    }
-
-    else {
-        mobileBox.remove('flexOff');
-        mobileBox.add('flexOn');
-    }
-}
-
 function clearResult() {
     if (resultBox.contains('flexOn')) {
         resultBox.remove('flexOn');
